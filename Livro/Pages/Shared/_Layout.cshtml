@@ -1,0 +1,152 @@
+﻿
+<!DOCTYPE html>
+<html class="h-100" lang="ro">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<!-- Website Title -->
+	<title>@ViewData["Title"] - Livro</title>
+	<!-- SEO Meta Tags -->
+	<meta name="description"
+		  content="Livro este o platforma ce detine si o aplicatie mobila ce pune la dispozitie clientilor posibilitatea de a efectua comenzi online." />
+	<meta name="author" content="TOPMARAIOANAIT S.R.L." />
+	<meta name="robots"
+		  content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+	<meta name="googlebot"
+		  content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+	<meta name="bingbot"
+		  content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+	<link rel="canonical" href="https://livro.ro/" />
+	<meta property="og:locale" content="ro_RO" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="Livro Mobile App" />
+	<meta property="og:description"
+		  content="Livro este o platforma ce detine si o aplicatie mobila ce pune la dispozitie clientilor posibilitatea de a efectua comenzi online." />
+	<meta property="og:url" content="https://livro.ro/" />
+	<meta property="og:site_name" content="Livro" />
+	<meta property="og:image" content="https://livro.ro/images/reclama.jpg" />
+	<meta property="og:image:secure_url"
+		  content="https://livro.ro/images/reclama.jpg" />
+	<meta property="og:image:alt" content="Livro Mobile App" />
+	<meta property="og:image:type" content="image/jpeg" />
+	<!-- Styles -->
+	<link rel="stylesheet" href="~/css/bootstrap.min.css">
+	<!-- style css -->
+	<link rel="stylesheet" href="~/css/style.css">
+	<!-- Responsive-->
+	<link rel="stylesheet" href="~/css/responsive.css">
+	<!-- Scrollbar Custom CSS -->
+	<link rel="stylesheet" href="~/css/jquery.mCustomScrollbar.min.css">
+	<!-- Tweaks for older IEs-->
+	<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+	<!-- Favicon  -->
+	<link rel="icon" type="image/png" sizes="16x16" href="~/images/favicon.png">
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+
+</head>
+<body class="main-layout">
+	<!-- loader  -->
+	<div class="loader_bg">
+		<div class="loader"><img src="images/loading.gif" alt="#" /></div>
+	</div>
+	<!-- end loader -->
+	<!-- header -->
+	<header>
+		<!-- header inner -->
+		<div class="header">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+						<div class="full">
+							<div class="center-desk">
+								<div class="logo">
+									<a asp-page="/Index" class="ml-5"><img src="images/logo.png" style="height:1.9em" alt="#" /></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+						<div class="header_information">
+							<nav class="navigation navbar navbar-expand-md navbar-dark ">
+								<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+									<span class="navbar-toggler-icon"></span>
+								</button>
+								<div class="collapse navbar-collapse" id="navbarsExample04">
+									<ul class="navbar-nav mr-auto">
+										<li class="nav-item ">
+											<a class="nav-link" asp-page="/About"> Despre Livro  </a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" asp-page="/Utile">Documente utile</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" asp-page="/Contact">Contacteaza</a>
+										</li>
+									</ul>
+								</div>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- end header inner -->
+	<!-- end header -->
+	<!-- banner -->
+	@RenderBody()
+	<!--  footer -->
+	<footer>
+		<div class="footer">
+			<div class="container">
+				<div class="row border-top">
+					
+					<div class="col-md-12">
+						<div class="row">
+							<div class="col-md-5 offset-md-1 padding_bottom1">
+								<h3>Link-uri</h3>
+								<ul class="cont">
+									<li><a href="https://www.facebook.com/Livro-Cernavoda-100498506021792" target="_blank"><i class="fa fa-facebook"></i><span>  Pagina Facebook</span></a></li>
+									<li><a href="https://play.google.com/store/apps/details?id=com.tmiit.livroapp" target="_blank"><i class="fa fa-google"></i><span>  Descarca de pe Play Store</span></a></li>
+								</ul>
+							</div>
+							<div class="col-md-5 offset-md-1">
+								<h3>Date contact</h3>
+								<ul class="cont">
+									<li><a href="mailto:support@livro.ro" target="_blank"><i class="fa fa-envelope"></i><span>  support@livro.ro</span></a></li>
+									<li><a href="#" target="_blank"><i class="fa fa-phone"></i><span>  +40 725 135 824</span></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="copyright">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<p>Copyright &copy; Designed & Developed by TMIIT 2022</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- end footer -->
+	<!-- Javascript files-->
+	<script src="~/js/jquery.min.js"></script>
+	<script src="~/js/popper.min.js"></script>
+	<script src="~/js/bootstrap.bundle.min.js"></script>
+	<script src="~/js/jquery-3.0.0.min.js"></script>
+
+	<!-- sidebar -->
+	<script src="~/js/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script src="~/js/custom.js"></script>
+	@RenderSection("Scripts", required: false)
+</body>
+</html>
+
+

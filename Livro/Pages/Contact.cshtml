@@ -1,0 +1,46 @@
+﻿@page
+@model Livro.Pages.ContactModel
+@{
+	ViewData["Title"] = "Contact";
+}
+<!--  contact -->
+      <div id="contact" class="contact">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage">
+                     <h2>Transmite un mesaj catre noi</h2>
+                  </div>
+               </div>
+               <div class="col-md-6 offset-md-3">
+                   <partial name="_StatusMessage" model="Model.StatusMessage" />
+                   <form id="request" class="main_form" method="post">
+                    <div asp-validation-summary="All" class="h5"></div>
+                    <div class="row">
+                    <div class="col-md-12 ">
+                           <input class="contactus" placeholder="Nume complet" asp-for="Input.Nume" type="text"  required
+                            >
+                        </div>
+                        <div class="col-md-12">
+                           <input class="contactus" placeholder="Nr Telefon" asp-for="Input.NrTelefon" type="text"  required
+                            >
+                        </div>
+                        <div class="col-md-12">
+                           <input placeholder="Email" class="contactus" asp-for="Input.Email" type="email"  required
+                            >                    
+                        </div>
+                        <div class="col-md-12">
+                           <textarea placeholder="Mesajul Tau" class="contactus" asp-for="Input.Text" required
+                            style="height:80px"></textarea>
+                        </div>
+                    
+                    <div class="col-sm-12">
+                        <button type="submit" class="send_btn">Trimite mesajul</button>
+                    </div>
+                    </div>
+                </form>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end contact -->
