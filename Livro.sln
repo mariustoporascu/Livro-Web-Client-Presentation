@@ -8,11 +8,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Livro", "Livro\Livro.csproj
 		{88AADD43-3B3D-4CB7-BF64-72E7A1EC5473} = {88AADD43-3B3D-4CB7-BF64-72E7A1EC5473}
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OShop.Domain", "..\OShopSLN\OShop.Domain\OShop.Domain.csproj", "{CAA64ED5-2DDD-4A3F-B82D-46E3946DF4AB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LivroManage.Domain", "..\LivroManage\LivroManage.Domain\LivroManage.Domain.csproj", "{CAA64ED5-2DDD-4A3F-B82D-46E3946DF4AB}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OShop.Database", "..\OShopSLN\OShop.Database\OShop.Database.csproj", "{FC7BA0FE-0B58-450C-8034-198DF83224A3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LivroManage.Database", "..\LivroManage\LivroManage.Database\LivroManage.Database.csproj", "{FC7BA0FE-0B58-450C-8034-198DF83224A3}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OShop.Application", "..\OShopSLN\OShop.Application\OShop.Application.csproj", "{88AADD43-3B3D-4CB7-BF64-72E7A1EC5473}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LivroManage.Application", "..\LivroManage\LivroManage.Application\LivroManage.Application.csproj", "{88AADD43-3B3D-4CB7-BF64-72E7A1EC5473}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

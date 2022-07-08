@@ -1,3 +1,6 @@
+using LivroManage.Application.FileManager;
+using LivroManage.Database;
+using LivroManage.Domain.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
@@ -5,11 +8,7 @@ using Microsoft.AspNetCore.StaticFiles;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
 using Microsoft.Net.Http.Headers;
-using OShop.Application.FileManager;
-using OShop.Database;
-using OShop.Domain.Models;
 
 using System;
 

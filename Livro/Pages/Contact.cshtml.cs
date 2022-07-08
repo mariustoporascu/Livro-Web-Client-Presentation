@@ -9,9 +9,9 @@ namespace Livro.Pages
 
     public class ContactModel : PageModel
     {
-		private readonly IConfiguration _config;
+        private readonly IConfiguration _config;
 
-		public ContactModel(IConfiguration config)
+        public ContactModel(IConfiguration config)
         {
             _config = config;
         }
@@ -37,7 +37,7 @@ namespace Livro.Pages
         {
             if (ModelState.IsValid)
             {
-                    
+
                 var emailResp = new EmailSender(_config).SendEmail("support@livro.ro", $"Mesaj pagina contact livro de la : {Input.Email}",
                 $"{Input.Nume}, {Input.NrTelefon}, {Input.Text}");
 
